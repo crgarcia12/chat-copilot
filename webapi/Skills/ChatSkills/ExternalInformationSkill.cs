@@ -79,6 +79,32 @@ public class ExternalInformationSkill
     }
 
     /// <summary>
+    /// Extract user intent from the conversation history.
+    /// </summary>
+    /// <param name="context">The SKContext.</param>
+    [SKFunction, Description("List cars available for sale")]
+    [SKParameter("chatId", "Chat ID to extract history from")]
+    [SKParameter("audience", "The audience the chat bot is interacting with.")]
+    public async Task<string> FindCarAsync(SKContext context)
+    {
+        await Task.Delay(1);
+        return "Mercedes EQA";
+    }
+
+    /// <summary>
+    /// Extract user intent from the conversation history.
+    /// </summary>
+    /// <param name="context">The SKContext.</param>
+    [SKFunction, Description("Calculate the sales price of an available car")]
+    [SKParameter("chatId", "Chat ID to extract history from")]
+    [SKParameter("audience", "The audience the chat bot is interacting with.")]
+    public async Task<string> CalculateCarPriceAsync(SKContext context)
+    {
+        await Task.Delay(1);
+        return "$10000";
+    }
+
+    /// <summary>
     /// Extract relevant additional knowledge using a planner.
     /// </summary>
     [SKFunction, Description("Acquire external information")]

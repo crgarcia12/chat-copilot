@@ -1,0 +1,10 @@
+﻿global using System;
+global using System.Collections;
+global using System.Data;
+global using System.Data.Common;
+global using System.Threading.Tasks;
+global using System.Linq;
+global using System.Globalization;
+global using System.IO;
+global using System.Text;
+global using System.Collections.Generic;

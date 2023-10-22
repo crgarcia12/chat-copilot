@@ -346,7 +346,7 @@ public class DocumentImportController : ControllerBase
                 formFile.FileName,
                 documentContent,
                 documentImportForm,
-                memorySource.Id
+                memorySource.Id 
             );
         }
         catch (Exception ex) when (!ex.IsCriticalException())
